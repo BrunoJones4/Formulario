@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="title">
+        <h1>Criar uma conta</h1>
+    </div>
+
+    <div class="formulario">
+    <form id="form-data" method="get">
+
+       <fieldset>
+            <legend><b>Formulário</b></legend>
+            
+            <label for="name">Nome:</label>
+            <input id="name" type="text" name="name" placeholder="Digite seu nome" autofocus required><br>
+
+            <label for="last-name">Sobrenome:</label>
+            <input id="last-name" type="text" name="last-name" placeholder="Digite seu sobrenome" required><br>
+            
+            <label for="date">Data de Nascimento:</label>
+            <input id="date" name="date" type="date" required><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" minlength="8" pattern=".+*\@\.com\.br" title="Somente emails com @domínio.com.br serão aceitos" name="email" placeholder="Digite seu e-mail" required><br>
+            
+            <label for="telephone">Telefone:</label>
+            <input id="telephone" name="telephone" type="tel" placeholder="Digite seu telefone"><br>
+
+
+            <label for="area">Qual área você se encaixa:</label>
+            <input id="area" type="radio" name="area" value="Front-end">Front-end
+            <input id="area" type="radio" name="area" value="Fullstack" checked>Fullstack
+            <input id="area" type="radio" name="area" value="Back-end">Back-end<br>
+
+            <label for="Level">Em qual nível você está?</label>
+            <select id="Level">
+                <option selected disabled>Selecione</option>
+                <option>Inciante</option>
+                <option>Básico</option>
+                <option>Intermediário</option>
+                <option>Avançado</option>
+            </select>
+       </fieldset>     
+    </form>
+    </div>
+
+
+    <div class="formulario">
+    <br>
+    <form action="" method="get"></form>
+    <fieldset>
+        <legend><b>Criando uma conta</b></legend>
+
+        <label for="user">Digite um nome de usuário:</label>
+        <input type="text" name="user" id="user" minlength="6" placeholder="Nome do Usuário" autocomplete="none" required><br>
+        
+        <label for="create-email">Digite seu e-mail:</label>
+        <input type="email" name="create-email" id="create-email" placeholder="exemplo@email.com.br" minlength="8" required>
+
+        <br>
+        <label for="password">Digite uma senha:</label>
+        <input type="password" name="password" id="password" minlength="6" placeholder="Digite a senha" autocomplete="new-password" required>
+        <br>
+
+        <label for="password">Repita a senha:</label>
+        <input type="password" name="password" id="password" minlength="6" placeholder="Digite a senha" autocomplete="new-password" required>
+    </fieldset>
+    </div>
+
+    <br>
+    <div class="button-send">
+        <button form="form-data" type="submit">Enviar</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

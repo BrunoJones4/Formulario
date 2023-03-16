@@ -1,0 +1,53 @@
+body {
+    margin: 18px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    border: 8px outset red;
+    border-radius: 6px;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100% );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textclip 2s linear infinite;
+}    
+
+@keyframes textclip {
+ to {
+    background-position: 200% center;
+ }
+}
+
+.formulario {
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    margin-bottom: 12px;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.button-send button {
+    height: 60px;
+    width: 100px;
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(179, 240, 10);
+    border: 5 solid black;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    margin-left: 100vh;
+    font-size: 15px;
+}  
